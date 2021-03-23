@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css\style.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://s3.amazonaws.com/myadvobuck/static/libs/typed.min.js"></script>
 
     <title>Rohit Autade Portfolio</title>
@@ -19,23 +20,23 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand ml-auto logo " href="#"><span class="Logotext">ROHIT<span class="inner-text">Autade
+        <a class="navbar-brand ml-auto logo " href="#Home"><span class="Logotext">ROHIT<span class="inner-text">Autade
                     &nbsp;</span></span></a>
         <div class="collapse navbar-collapse" id="Navbar">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span>
+                <li class="nav-item active"><a class="nav-link" href="#Home"><span class="fa fa-home fa-lg"></span>
                         Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about"><span class="fa fa-info fa-lg"></span> About</a>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="#skills"><span class="fa fa-microchip fa-lg"></span>
+                <li class="nav-item"><a class="nav-link" href="#skills"><span class="fa fa-leanpub fa-lg"></span>
                         Skills</a>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="#experience"><span class="fa fa-history fa-lg"></span>
                         Experience</a>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-desktop fa-lg"></span> Projects</a>
+                <li class="nav-item"><a class="nav-link" href="#project"><span class="fa fa-desktop fa-lg"></span> Projects</a>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="./contactus.html"><span
+                <li class="nav-item"><a class="nav-link" href="#contact"><span
                             class="fa fa-address-card fa-lg"></span> Contact</a></li>
             </ul>
 
@@ -46,7 +47,7 @@
     </nav>
     <!-- Home Section -->
 
-    <div class="home">
+    <div class="home" id="Home">
         <img src="./img/PicsArt_03-18-01.18.41.jpg" class="img-fluid" width="100%" height="600px">
         <div class="innerhome">
             <span class="centered">Hii, I am<br /> <span class="innertext">Rohit D. Autade</span><br /><span id="typed"
@@ -66,7 +67,7 @@
 
     <!-- About me -->
 
-
+    
     <div class="container" id="about">
         <h2 class="abouhead mt-5 mb-4">About Me</h2>
 
@@ -91,10 +92,10 @@
                     I love learning about new technologies, what problems are they solving and How can I use
                     them to build better and scalable products.
                 </p>
-                <button type="button" class="btn btn-outline-primary m-2"> Let's talk</button>
-                <button type="button" class="btn btn-outline-success m-2">My Resume</button>
-                <button type="button" class="btn btn-outline-dark m-2"> GitHub</button>
-                <button type="button" class="btn btn-outline-info m-2"> LinkedIn</button>
+                <a type="button" type="button" href="#contact" class="btn btn-outline-primary m-2"> Let's talk</a>
+                <a type="button" href="https://drive.google.com/file/d/1Ldg4HOMrB6-dKDBF5bo3H9tasHUvXcdb/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline-success m-2">My Resume</a>
+                <a href="https://github.com/rohitdautade" target="_blank" rel="noopener noreferrer" type="button" class="btn btn-outline-dark m-2"> GitHub</a>
+                <a href="https://www.linkedin.com/in/rohit-autade-72073a169/" target="_blank" rel="noopener noreferrer" type="button" class="btn btn-outline-info m-2"> LinkedIn</a>
             </div>
 
         </div>
@@ -236,7 +237,7 @@
     </div>
     <!-- Experience -->
     <div class="container mt-5" id="experience">
-        <h2 class="abouhead mt-5 mb-4">Experience</h2>
+        <h2 class="abouhead mt-5 mb-4">Experience (Internship)</h2>
         <div class="card expbg text-white exp">
             <div class="card-title p-3 bg-secondary">
                 <img src="./img/logo192.png" class="img-responsive  mx-auto d-block " alt="" width="100px"
@@ -285,18 +286,97 @@
 
     </div>
     <!-- Projects -->
-    <div class="container mt-5 ">
+    <div class="container mt-5 " id="project">
         <h2 class="abouhead mt-5 mb-4"> My Projects</h2>
+    </div>
+    <div class="bg-secondary">
+
+
         <div class="timeline bg-secondary">
+            <div class="pcontainer left">
+                <div class="pcontent">
+                    <h2 class="text-center textcolor">React ToDo App</h2>
+                    <img src="img/ToDo.png" class="img-thumbnail">
+
+                    <button data-toggle="collapse" data-target="#Todo" class="btn btn-primary btn-block mt-1">PROJECT
+                        DETAILS</button>
+
+                    <div id="Todo" class="collapse">
+                        <div class="border-right border-left border-bottom text-left text-justify pl-2 pt-3 pr-2">
+                            <strong> Description:</strong> This is a Todo App created with React js and Bootstrap that
+                            keeps a track of your Todos
+                            <hr />
+                            <strong>Features:</strong>
+                            <ul>
+                                <li>
+                                    Keeps track of your Todos
+
+
+                                </li>
+                                <li>
+                                    Powered by React and Bootstrap
+                                </li>
+                                <li>
+                                    Respoisive Design
+
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="text-center mt-3">
+                            <button type="button" class="btn btn-outline-primary btn-sm" onclick="githubtodo()">Source
+                                Code</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="pcontainer right">
+                <div class="pcontent">
+                    <h2 class="text-center textcolor">Portfolio</h2>
+                    <img src="img/portfolio.png" class="img-thumbnail">
+
+                    <button data-toggle="collapse" data-target="#portfolio"
+                        class="btn btn-primary btn-block mt-1">PROJECT
+                        DETAILS</button>
+
+                    <div id="portfolio" class="collapse">
+                        <div class="border-right border-left border-bottom text-left text-justify pl-2 pt-3 pr-2">
+                            <strong> Description:</strong> This is my first portfolio website built using HTML,CSS,
+                            Bootstrap and JavaScript
+                            <hr />
+                            <strong>Features:</strong>
+                            <ul>
+                                <li>
+                                    Send emails
+                                </li>
+                                <li>
+                                    View my projects
+                                </li>
+                                <li>
+                                    Hosted using GitHub
+
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="text-center mt-3">
+                            <button type="button" class="btn btn-outline-primary btn-sm" onclick="portfolio()">Source
+                                Code</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
             <div class="pcontainer left">
                 <div class="pcontent">
                     <h2 class="text-center textcolor">Covid Stats</h2>
                     <img src="img/covid19.jpg" class="img-thumbnail">
 
-                    <button data-toggle="collapse" data-target="#demo" class="btn btn-primary btn-block mt-1">PROJECT
+                    <button data-toggle="collapse" data-target="#covid" class="btn btn-primary btn-block mt-1">PROJECT
                         DETAILS</button>
 
-                    <div id="demo" class="collapse">
+                    <div id="covid" class="collapse">
                         <div class="border-right border-left border-bottom text-left text-justify pl-2 pt-3 pr-2">
                             <strong> Description:</strong> This is a Covid Stats website created with HTML ,CSS and
                             jquery UI that keeps a track of Covid Information
@@ -317,29 +397,14 @@
 
                         </div>
                         <div class="text-center mt-3">
-                            <button type="button" class="btn btn-outline-primary btn-sm" onclick="githubcovid()">Source Code</button>
+                            <button type="button" class="btn btn-outline-primary btn-sm" onclick="githubcovid()">Source
+                                Code</button>
                         </div>
                     </div>
                 </div>
 
             </div>
-            <div class="pcontainer right">
-                <div class="pcontent">
-                    <h2>2016</h2>
-                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim
-                        ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo
-                        iusto primis ea eam.</p>
-                </div>
-            </div>
-            <div class="pcontainer left">
-                <div class="pcontent">
-                    <h2>2015</h2>
-                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim
-                        ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo
-                        iusto primis ea eam.</p>
-                </div>
-            </div>
-            <div class="pcontainer right">
+            <!-- <div class="pcontainer right">
                 <div class="pcontent">
                     <h2>2012</h2>
                     <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim
@@ -362,7 +427,7 @@
                         ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo
                         iusto primis ea eam.</p>
                 </div>
-            </div>
+            </div> -->
         </div>
         <!-- <div class="pcontainer mb-3">
             <img src="img/covid19.jpg" alt="Avatar" class="pimage">
@@ -376,8 +441,41 @@
 
 
     </div>
+    <!-- contact  us-->
+    <div class="container mt-5" id="contact">
+        <h2 class="abouhead mt-5 mb-4">Contact Me</h2>
+        <div class="colorcontact p-1">
+            <div class="row d-flex justify-content-center flex-wrap ">
 
-    <br />
+                <a type="button" href="mailto:rohitautade9552@gmail.com" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-outline-danger m-1 col-md-2 col-6"> <span
+                        class="fa fa-envelope fa-lg mr-2"></span>Email Me</a>
+                <a href="https://www.linkedin.com/in/rohit-autade-72073a169/" target="_blank" rel="noopener noreferrer"
+                    type="button" class="btn btn-outline-info m-1 col-md-2 col-6"> <span
+                        class="fa  fa-linkedin-square fa-lg mr-2"></span>LinkedIn</a>
+                <a href="https://github.com/rohitdautade" target="_blank" rel="noopener noreferrer" type="button"
+                    class="btn btn-outline-secondary m-1 col-md-2 col-6"> <span
+                        class="fa fa-github fa-lg mr-2"></span>GitHub</a>
+                <a href="https://www.youtube.com/channel/UCLBfWB8RUiJbuw4vhTYBCuQ" target="_blank" rel="noopener noreferrer" type="button"
+                    class="btn btn-outline-danger m-1 col-md-2 col-6"><span
+                        class="fa  fa-youtube-play fa-lg mr-2"></span>Youtube</a>
+                        <a href="https://www.facebook.com/rohit.autadepatil" target="_blank" rel="noopener noreferrer" type="button"
+                        class="btn btn-outline-primary m-1 col-md-2 col-6"> <span
+                            class="fa  fa fa-facebook-square fa-lg mr-2"></span>FaceBook</a>
+                <a href="https://www.instagram.com/rohit_autade_patil" target="_blank" rel="noopener noreferrer" type="button"
+                    class="btn btn-outline-danger m-1 col-md-2 col-6"> <span
+                        class="fa fa-instagram fa-lg mr-2"></span>Instagram</a>
+               
+
+            </div>
+
+        </div>
+    </div>
+    <div class="bg-dark mt-3 container-fluid">
+        <div class="text-white text-center p-2 ffont">© Rohit D. Autade &nbsp; 2021</div>
+    </div>
+
+
 
 
 
@@ -414,9 +512,16 @@
         });
     </script>
     <script>
-        githubcovid=()=>{
+        githubcovid = () => {
             open('https://github.com/rohitdautade/covidstats')
         }
+        portfolio = () => {
+
+        }
+        githubtodo = () => {
+            open('https://github.com/rohitdautade/React-ToDo/tree/master')
+        }
+
     </script>
 
     <!-- Import Particles.js and app.js files -->
