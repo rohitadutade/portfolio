@@ -79,7 +79,7 @@ font-size: medium;
 }
 
 .profile {
-  max-width: 18em;
+  max-width: 70%;
 }
 
 .my-details {
@@ -238,6 +238,13 @@ font-size: medium;
 }
 .ffont{
   font-size: 1.5em;
+}
+.carousel-control-prev-icon{
+ 
+  background-color: springgreen;
+}
+.carousel-control-next-icon{
+  background-color: springgreen;
 }
 
 .navbar .nav-item:hover .nav-link
